@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>深圳开智镁客</title>
+  <meta name="description" content="跨境电商企业官网，现代简约、国际化、响应式展示网站。" />
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eef5ff',
+              100: '#d8e8ff',
+              200: '#b9d5ff',
+              300: '#89b7ff',
+              400: '#5e95ff',
+              500: '#2f6bff',
+              600: '#1f56db',
+              700: '#1d47b3',
+              800: '#1f3f8d',
+              900: '#203768'
+            },
+            ink: '#0b1220',
+            soft: '#f5f7fb',
+            accent: '#ff6a1a'
+          },
+          boxShadow: {
+            soft: '0 20px 60px rgba(15, 23, 42, 0.10)',
+            glow: '0 20px 80px rgba(47, 107, 255, 0.18)'
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&family=Noto+Sans+JP:wght@400;500;700;900&family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page-body">
+  <header class="site-header" id="siteHeader">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between gap-4">
+        <a href="index.html" class="flex items-center gap-3">
+          <div class="brand-mark">GB</div>
+          <div>
+            <div class="brand-name" data-i18n="companyName">深圳开智镁客</div>
+            <div class="brand-sub" data-i18n="brandTag">Cross-Border Trade</div>
+          </div>
+        </a>
+        <nav class="hidden items-center gap-8 lg:flex">
+          <a class="nav-link" href="index.html" data-i18n="navHome">首页</a>
+          <a class="nav-link" href="pages/company.html" data-i18n="navCompany">公司介绍</a>
+          <a class="nav-link" href="pages/products.html" data-i18n="navProducts">产品中心</a>
+          <a class="nav-link" href="pages/contact.html" data-i18n="navContact">联系我们</a>
+        </nav>
+        <div class="hidden items-center gap-3 lg:flex">
+          <div class="lang-switcher">
+            <select class="lang-select" aria-label="language select">
+              <option value="zh">中文</option>
+              <option value="en">English</option>
+              <option value="ja">日本語</option>
+              <option value="ms">Bahasa Melayu</option>
+            </select>
+          </div>
+        </div>
+        <button id="mobileMenuBtn" class="mobile-toggle lg:hidden" aria-label="menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="mobile-menu lg:hidden">
+      <div class="mx-auto max-w-7xl px-4 py-4 sm:px-6">
+        <div class="flex flex-col gap-4">
+          <a class="mobile-link" href="index.html" data-i18n="navHome">首页</a>
+          <a class="mobile-link" href="pages/company.html" data-i18n="navCompany">公司介绍</a>
+          <a class="mobile-link" href="pages/products.html" data-i18n="navProducts">产品中心</a>
+          <a class="mobile-link" href="pages/contact.html" data-i18n="navContact">联系我们</a>
+          <div class="lang-switcher mt-2">
+            <select class="lang-select w-full" aria-label="language select mobile">
+              <option value="zh">中文</option>
+              <option value="en">English</option>
+              <option value="ja">日本語</option>
+              <option value="ms">Bahasa Melayu</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section pt-20">
+      <div class="hero-slider" id="heroSlider">
+        <div class="hero-slide active" style="background-image: linear-gradient(100deg, rgba(7, 12, 23, 0.76), rgba(10, 22, 48, 0.26)), url('https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=1600&q=80');">
+          <div class="mx-auto grid max-w-7xl items-center gap-10 px-4 py-24 sm:px-6 lg:grid-cols-2 lg:px-8 lg:py-28">
+            <div class="hero-copy reveal">
+              <span class="eyebrow" data-i18n="homeHeroEyebrow1">全球供应链 · 高效履约</span>
+              <h1 class="hero-title" data-i18n="homeHeroTitle1">链接全球市场的跨境贸易伙伴</h1>
+              <p class="hero-desc" data-i18n="homeHeroDesc1">聚焦消费电子、智能家居与精品生活方式产品，为全球渠道客户提供稳定货源、品质交付与品牌增长支持。</p>
+              <div class="mt-8 flex flex-wrap gap-4">
+                <a href="pages/products.html" class="btn-primary" data-i18n="homeHeroBtnPrimary">查看产品</a>
+                <a href="pages/contact.html" class="btn-secondary" data-i18n="homeHeroBtnSecondary">获取报价</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-slide" style="background-image: linear-gradient(100deg, rgba(7, 12, 23, 0.76), rgba(10, 22, 48, 0.26)), url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80');">
+          <div class="mx-auto grid max-w-7xl items-center gap-10 px-4 py-24 sm:px-6 lg:grid-cols-2 lg:px-8 lg:py-28">
+            <div class="hero-copy reveal">
+              <span class="eyebrow" data-i18n="homeHeroEyebrow2">品牌出海 · 专业服务</span>
+              <h2 class="hero-title" data-i18n="homeHeroTitle2">面向 B 端客户的一站式跨境电商解决方案</h2>
+              <p class="hero-desc" data-i18n="homeHeroDesc2">从选品、采购、质检到国际物流、售后协同，帮助企业快速进入海外市场，建立长期竞争力。</p>
+              <div class="mt-8 flex flex-wrap gap-4">
+                <a href="pages/company.html" class="btn-primary" data-i18n="homeHeroBtnPrimary2">了解我们</a>
+                <a href="pages/contact.html" class="btn-secondary" data-i18n="homeHeroBtnSecondary2">联系顾问</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-slide" style="background-image: linear-gradient(100deg, rgba(7, 12, 23, 0.76), rgba(10, 22, 48, 0.26)), url('https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=1600&q=80');">
+          <div class="mx-auto grid max-w-7xl items-center gap-10 px-4 py-24 sm:px-6 lg:grid-cols-2 lg:px-8 lg:py-28">
+            <div class="hero-copy reveal">
+              <span class="eyebrow" data-i18n="homeHeroEyebrow3">智能选品 · 多语沟通</span>
+              <h2 class="hero-title" data-i18n="homeHeroTitle3">响应全球客户需求，打造值得信赖的合作体验</h2>
+              <p class="hero-desc" data-i18n="homeHeroDesc3">支持多语言展示与国际化商务沟通，让您的客户从第一眼开始就感受到专业、稳定与高效。</p>
+              <div class="mt-8 flex flex-wrap gap-4">
+                <a href="pages/products.html" class="btn-primary" data-i18n="homeHeroBtnPrimary3">热销产品</a>
+                <a href="pages/contact.html" class="btn-secondary" data-i18n="homeHeroBtnSecondary3">立即咨询</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-dots" id="heroDots"></div>
+      </div>
+    </section>
+
+    <section class="section-shell">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="section-head reveal">
+          <span class="section-kicker" data-i18n="homeProductsKicker">核心产品</span>
+          <h2 class="section-title" data-i18n="homeProductsTitle">面向全球市场的精选产品矩阵</h2>
+          <p class="section-desc" data-i18n="homeProductsDesc">聚焦高需求、高复购、高性价比品类，满足不同渠道与地区市场需求。</p>
+        </div>
+        <div id="homeProductsGrid" class="mt-10 grid gap-6 sm:grid-cols-2 xl:grid-cols-4"></div>
+      </div>
+    </section>
+
+    <section class="section-shell section-dark">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="section-head reveal">
+          <span class="section-kicker text-brand-300" data-i18n="homeAdvantagesKicker">企业优势</span>
+          <h2 class="section-title text-white" data-i18n="homeAdvantagesTitle">为什么全球客户选择我们</h2>
+          <p class="section-desc text-slate-300" data-i18n="homeAdvantagesDesc">以供应链能力、品质把控和国际化服务体系，为客户持续创造长期价值。</p>
+        </div>
+        <div class="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          <article class="adv-card reveal"><div class="adv-icon">01</div><h3 class="adv-title" data-i18n="advTitle1">稳定供应链</h3><p class="adv-text" data-i18n="advDesc1">整合优质工厂与成熟采购网络，保障交付周期、品质一致性与产能稳定。</p></article>
+          <article class="adv-card reveal"><div class="adv-icon">02</div><h3 class="adv-title" data-i18n="advTitle2">严格质检</h3><p class="adv-text" data-i18n="advDesc2">从原材料到成品出货建立多重检测流程，降低退货率与售后风险。</p></article>
+          <article class="adv-card reveal"><div class="adv-icon">03</div><h3 class="adv-title" data-i18n="advTitle3">全球物流</h3><p class="adv-text" data-i18n="advDesc3">支持海运、空运、快递与海外仓协同，适配多地区履约需求。</p></article>
+          <article class="adv-card reveal"><div class="adv-icon">04</div><h3 class="adv-title" data-i18n="advTitle4">多语服务</h3><p class="adv-text" data-i18n="advDesc4">提供多语沟通、定制资料与快速响应，让国际合作更高效顺畅。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="cta-panel reveal">
+          <div>
+            <span class="section-kicker" data-i18n="homeCtaKicker">开启合作</span>
+            <h2 class="mt-2 text-3xl font-black text-ink md:text-4xl" data-i18n="homeCtaTitle">让您的品牌与产品更快触达海外客户</h2>
+            <p class="mt-4 max-w-2xl text-slate-600" data-i18n="homeCtaDesc">欢迎联系我们获取产品目录、渠道报价与跨境合作建议，我们将在 24 小时内回复。</p>
+          </div>
+          <div class="flex flex-wrap gap-4">
+            <a href="pages/contact.html" class="btn-primary" data-i18n="homeCtaBtn1">立即联系</a>
+            <a href="pages/company.html" class="btn-secondary" data-i18n="homeCtaBtn2">了解公司</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-8 text-sm text-slate-300 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+      <div><div class="font-semibold text-white" data-i18n="companyName">深圳开智镁客</div><div data-i18n="footerText">专业跨境电商与国际贸易合作伙伴</div></div>
+      <div data-i18n="footerCopy">© 2025 深圳开智镁客. All Rights Reserved.</div>
+    </div>
+  </footer>
+
+  <script src="js/lang.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
